@@ -1,0 +1,126 @@
+{
+  "personalInfo": {
+    "name": "Saral Karki",
+    "title": "Data Specialist",
+    "location": "Anandanagar Marga, Dhumbarahi, Kathmandu",
+    "phone": "+977-9860041091",
+    "email": "saral.karki@gmail.com",
+    "portfolio": "https://medium.com/@Saral.karki",
+    "website": "www.saralcodes.xyz"
+  },
+  "professionalSummary": "Data Specialist with 5+ years of experience building end-to-end data systems, especially in agricultural research. Proficient in pipeline development (Python, SQL, dbt), automation (GitHub Actions, Bash), and deployment (Docker, VPS). Experienced with integrating LLM APIs for real-world applications.",
+  "experience": [
+    {
+      "title": "Data Specialist",
+      "company": "International Maize and Wheat Improvement Centre (CIMMYT)",
+      "location": "Khumaltar, Nepal",
+      "period": "January 2020 – Present",
+      "responsibilities": [
+        "Designed and implemented automated pipelines to collect field data using KoboToolbox and push cleaned data to interactive dashboards (Dash, Power BI, Looker Studio)",
+        "Developed standardized data management protocols to improve accuracy, reproducibility, and efficiency",
+        "Built data transformation workflows using SQL and dbt",
+        "Used Linux and Bash scripting to automate ingestion and reporting",
+        "Leveraged Git and GitHub Actions for version control and automation",
+        "Integrated Hugging Face and OpenAI APIs for NLP-related analysis",
+        "Leading a wheat disease monitoring pipeline for yellow rust tracking"
+      ]
+    },
+    {
+      "title": "Data Manager",
+      "company": "International Institute of Independent Researchers",
+      "location": "Anamnagar",
+      "period": "June 2018 – December 2019",
+      "responsibilities": [
+        "Managed data operations for research projects using Python, R, and ODK",
+        "Built custom scripts and dashboards for monitoring and evaluation"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master's in International Studies",
+      "institution": "University of Wollongong",
+      "location": "Australia"
+    },
+    {
+      "degree": "Bachelor's in Development Studies",
+      "institution": "National College, Kathmandu University",
+      "location": "Nepal"
+    }
+  ],
+  "technicalSkills": [
+    {
+      "category": "Programming & Analysis",
+      "skills": ["Python (pandas, numpy, matplotlib, seaborn, scrapy)", "R", "SQL (PostgreSQL)", "dbt"]
+    },
+    {
+      "category": "Data Collection & ETL",
+      "skills": ["ODK", "KoboToolbox", "Bash scripting", "Cron jobs", "VPS deployments"]
+    },
+    {
+      "category": "Visualization & Reporting",
+      "skills": ["Dash", "Power BI", "Looker Studio", "Flask", "HTML/CSS"]
+    },
+    {
+      "category": "Infrastructure & DevOps",
+      "skills": ["Git", "GitHub Actions", "Docker"]
+    },
+    {
+      "category": "LLMs & APIs",
+      "skills": ["Hugging Face", "OpenAI", "Prompt engineering"]
+    }
+  ],
+  "certifications": [
+    {
+      "name": "Introduction to Data Science in Python",
+      "issuer": "Coursera",
+      "date": "June 2019"
+    },
+    {
+      "name": "Applied Plotting, Charting & Data Representation in Python",
+      "issuer": "Coursera",
+      "date": "July 2019"
+    }
+  ],
+  "publications": [
+    {
+      "title": "The optimization of conservation agriculture practices requires attention to location-specific performance",
+      "journal": "Field Crops Research, Volume 282",
+      "date": "June 2022",
+      "doi": "10.1016/j.fcr.2022.108508"
+    }
+  ],
+  "projects": [
+    {
+      "title": "Wheat Disease Monitoring Pipeline",
+      "description": "Ongoing system using LLMs and custom data pipelines for rust outbreak tracking"
+    },
+    {
+      "title": "Groundwater Monitoring Dashboard",
+      "description": "Kobo Collect pipeline for GWRDB Nepal",
+      "url": "http://www.gw-nepal.com"
+    }
+  ],
+  "mediaPortfolio": [
+    {
+      "title": "Sandeep Lamichhane T20 Stats",
+      "url": "https://medium.com/@Saral.karki/comparing-sandeep-lamichhanes-twenty-20-stats-with-other-prominent-leggies-e028d80a570c"
+    },
+    {
+      "title": "Earthquake Cluster Analysis",
+      "url": "https://medium.com/@Saral.karki/earthquake-cluster-analysis-k-means-approach-cdb2bf6cb21b"
+    },
+    {
+      "title": "Nepal Earthquakes - Data Visualization",
+      "url": "https://medium.com/@Saral.karki/nepal-earthquakes-magnitude-data-analysis-and-data-visualization-with-python-59988c0c807e"
+    },
+    {
+      "title": "GPS Ground Coverage Analysis",
+      "url": "https://medium.com/@Saral.karki/have-i-been-covering-enough-ground-6c7b990cfc8e"
+    },
+    {
+      "title": "Steps Distribution – Central Limit Theorem",
+      "url": "https://medium.com/@Saral.karki/visualizing-desired-steps-distribution-using-the-central-limit-theo"
+    }
+  ]
+}
