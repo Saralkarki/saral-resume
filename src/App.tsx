@@ -9,7 +9,10 @@ import MediaPortfolio from "./components/MediaPortfolio";
 
 function App() {
   return (
-    <div className="resume-root d-flex min-vh-100 flex-row flex-md-row flex-column" style={{ background: "#e0e0e0" }}>
+    <div
+      className="resume-root d-flex min-vh-100 flex-row flex-md-row flex-column"
+      style={{ background: "#e0e0e0" }}
+    >
       {/* Sidebar/ProfileCard */}
       <div
         className="profile-col bg-white"
