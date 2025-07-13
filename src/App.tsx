@@ -9,12 +9,12 @@ import MediaPortfolio from "./components/MediaPortfolio";
 
 function App() {
   return (
-    <div className="d-flex min-vh-100" style={{ background: "#e0e0e0" }}>
-      {/* Sidebar */}
+    <div className="resume-root d-flex min-vh-100 flex-row flex-md-row flex-column" style={{ background: "#e0e0e0" }}>
+      {/* Sidebar/ProfileCard */}
       <div
+        className="profile-col bg-white"
         style={{
           flex: "0 0 320px",
-          background: "#fff",
           minHeight: "100vh",
           position: "sticky",
           top: 0,
@@ -26,7 +26,7 @@ function App() {
       </div>
       {/* Main Content */}
       <main
-        className="flex-grow-1"
+        className="main-content flex-grow-1"
         style={{
           background: "#f5f5f5",
           minHeight: "100vh",
@@ -35,7 +35,6 @@ function App() {
           borderRadius: 0,
         }}
       >
-        {/* Remove Header, already in sidebar */}
         <div className="mb-4">
           <Summary />
         </div>
