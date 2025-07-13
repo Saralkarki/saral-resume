@@ -1,39 +1,42 @@
 import resumeData from "../data/resume.json";
 
-export default function Header() {
-  return (
-    <header>
-      <h1>{resumeData.personalInfo.name}</h1>
-      <h2>{resumeData.personalInfo.title}</h2>
-      <div className="contact-info">
-        <div>{resumeData.personalInfo.location}</div>
-        <div>
-          <a href={`tel:${resumeData.personalInfo.phone}`}>
-            {resumeData.personalInfo.phone}
-          </a>{" "}
-          |
-          <a href={`mailto:${resumeData.personalInfo.email}`}>
-            {resumeData.personalInfo.email}
-          </a>
-        </div>
-        <div>
-          <a
-            href={resumeData.personalInfo.portfolio}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Medium Portfolio
-          </a>{" "}
-          |
-          <a
-            href={`http://${resumeData.personalInfo.website}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {resumeData.personalInfo.website}
-          </a>
-        </div>
-      </div>
-    </header>
-  );
-}
+return (
+  <header className="mb-4">
+    <div
+      className="bg-white rounded-3 shadow-sm p-4 d-flex align-items-center gap-4"
+      style={{ fontSize: 18, color: "#222" }}
+    >
+      <span className="d-flex align-items-center">
+        <i className="bi bi-house-door-fill me-2"></i>
+        <span className="text-dark small">
+          {resumeData.personalInfo.location}
+        </span>
+      </span>
+      <a
+        href={`tel:${resumeData.personalInfo.phone}`}
+        className="d-flex align-items-center text-decoration-none"
+      >
+        <i className="bi bi-telephone-fill me-2"></i>
+        <span className="text-dark small">{resumeData.personalInfo.phone}</span>
+      </a>
+      <a
+        href={`mailto:${resumeData.personalInfo.email}`}
+        className="d-flex align-items-center text-decoration-none"
+      >
+        <i className="bi bi-envelope-fill me-2"></i>
+        <span className="text-dark small">{resumeData.personalInfo.email}</span>
+      </a>
+      <a
+        href={`http://${resumeData.personalInfo.website}`}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="d-flex align-items-center text-decoration-none"
+      >
+        <i className="bi bi-globe me-2"></i>
+        <span className="text-dark small">
+          {resumeData.personalInfo.website}
+        </span>
+      </a>
+    </div>
+  </header>
+);

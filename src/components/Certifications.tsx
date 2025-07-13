@@ -6,7 +6,7 @@ const Certifications: React.FC = () => {
     <div className="certifications">
       <h2>Certifications</h2>
       {resumeData.certifications.map((cert, index) => (
-        <div key={index} className="certification">
+        <div key={index} className="bg-white rounded-3 shadow-sm mb-3 p-4">
           <h3>{cert.name}</h3>
           <div>
             {cert.issuer} - {cert.date}

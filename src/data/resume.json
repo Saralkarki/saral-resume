@@ -49,27 +49,51 @@
     }
   ],
   "technicalSkills": [
-    {
-      "category": "Programming & Analysis",
-      "skills": ["Python (pandas, numpy, matplotlib, seaborn, scrapy)", "R", "SQL (PostgreSQL)", "dbt"]
-    },
-    {
-      "category": "Data Collection & ETL",
-      "skills": ["ODK", "KoboToolbox", "Bash scripting", "Cron jobs", "VPS deployments"]
-    },
-    {
-      "category": "Visualization & Reporting",
-      "skills": ["Dash", "Power BI", "Looker Studio", "Flask", "HTML/CSS"]
-    },
-    {
-      "category": "Infrastructure & DevOps",
-      "skills": ["Git", "GitHub Actions", "Docker"]
-    },
-    {
-      "category": "LLMs & APIs",
-      "skills": ["Hugging Face", "OpenAI", "Prompt engineering"]
-    }
-  ],
+  {
+    "category": "Programming Languages",
+    "skills": ["Python", "R"]
+  },
+  {
+    "category": "Scripting & Markup Languages",
+    "skills": ["Bash", "HTML", "CSS"]
+  },
+  {
+    "category": "Frameworks & Web Development libraries",
+    "skills": ["Flask", "Dash","Django","React"]
+  },
+  {
+    "category": "Data Engineering & Databases",
+    "skills": ["SQL (PostgreSQL)", "dbt", "Cron jobs"]
+  },
+  {
+    "category": "Data Analysis & Libraries",
+    "skills": ["pandas", "numpy", "matplotlib", "seaborn", "scrapy"]
+  },
+  {
+    "category": "Data Collection Tools",
+    "skills": ["ODK", "KoboToolbox"]
+  },
+  {
+    "category": "Data Visualization & BI Tools",
+    "skills": ["Power BI", "Looker Studio"]
+  },
+  {
+    "category": "Version Control & CI/CD",
+    "skills": ["Git", "GitHub Actions"]
+  },
+  {
+    "category": "Containerization & Deployment",
+    "skills": ["Docker", "VPS deployments"]
+  },
+  {
+    "category": "Operating Systems",
+    "skills": ["Linux", "macOS", "Windows"]
+  },
+  {
+    "category": "LLMs & Generative AI",
+    "skills": ["OpenAI", "Hugging Face", "Prompt Engineering"]
+  }
+],
   "certifications": [
     {
       "name": "Introduction to Data Science in Python",
