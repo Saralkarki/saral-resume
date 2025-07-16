@@ -1,5 +1,5 @@
 import resumeData from "../data/resume.json";
-import avatarUrl from "../../image/saral.jpg";
+import avatarUrl from "../../image/saral.png";
 
 export default function ProfileCard() {
   return (
