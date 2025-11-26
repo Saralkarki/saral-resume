@@ -136,6 +136,20 @@ export default function ProfileCard() {
             </div>
           ))}
         </div>
+        {/* Print Button - moved to bottom */}
+        <button
+          onClick={() => window.print()}
+          className="btn btn-primary mt-3 w-100 print-hidden"
+          style={{
+            borderRadius: "8px",
+            padding: "12px 16px",
+            fontSize: "14px",
+            fontWeight: "600",
+          }}
+        >
+          <i className="bi bi-printer me-2"></i>
+          Download PDF
+        </button>
       </div>
     </aside>
   );

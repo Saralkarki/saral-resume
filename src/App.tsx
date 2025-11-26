@@ -45,10 +45,10 @@ function App() {
           <Experience />
         </div>
         <div className="mb-4">
-          <Education />
+          <Projects />
         </div>
         <div className="mb-4">
-          <Projects />
+          <Education />
         </div>
         <div className="mb-4">
           <Publications />

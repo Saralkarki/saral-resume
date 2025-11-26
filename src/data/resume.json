@@ -8,15 +8,15 @@
     "portfolio": "https://medium.com/@Saral.karki",
     "website": "saralkarki.github.io/saral-resume/"
   },
-  "professionalSummary": "Data Specialist with 5+ years of experience building end-to-end data systems, especially in agricultural research. Proficient in pipeline development (Python, SQL, dbt), automation (GitHub Actions, Bash), and deployment (Docker, VPS). Experienced with integrating LLM APIs for real-world applications.",
+  "professionalSummary": "Data Specialist with 5+ years of experience building data systems, pipelines, dashboards, and automation workflows across research and analytics. Skilled in Python, SQL, cloud deployment, dbt, statistical modeling, and LLM‑powered automation. Recently expanded into sports analytics with daily data‑driven cricket articles and visual insights at <a href='https://cricketgardens.com' target='_blank' rel='noopener noreferrer'>Cricket Gardens</a>.",
   "experience": [
     {
       "title": "Data Specialist",
       "company": "International Maize and Wheat Improvement Centre (CIMMYT)",
       "location": "Khumaltar, Nepal",
-      "period": "January 2020 – Present",
+      "period": "January 2020 – August 2025",
       "responsibilities": [
-        "Designed and implemented automated pipelines to collect field data using KoboToolbox and push cleaned data to interactive dashboards (Dash, Power BI, Looker Studio)",
+        "Designed and implemented automated pipelines to collect field data using KoboToolbox and push cleaned data to interactive dashboards (Dash, Power BI, Looker Studio, Tableau)",
         "Developed standardized data management protocols to improve accuracy, reproducibility, and efficiency",
         "Built data transformation workflows using SQL and dbt",
         "Used Linux and Bash scripting to automate ingestion and reporting",
@@ -116,13 +116,19 @@
   ],
   "projects": [
     {
+      "title": "Cricket Analytics ",
+      "description": "Analysis of cricket player performance using data scraping and visualization techniques",
+      "url": "https://cricketgardens.com"
+    },
+    {
       "title": "Wheat Disease Monitoring Pipeline",
-      "description": "Ongoing system using LLMs and custom data pipelines for rust outbreak tracking"
+      "description": "Ongoing system using LLMs and custom data pipelines for rust outbreak tracking",
+      "url": "https://mediascraper.saralcodes.xyz/"
     },
     {
       "title": "Groundwater Monitoring Dashboard",
       "description": "Kobo Collect pipeline for GWRDB Nepal",
-      "url": "http://www.gw-nepal.com"
+      "url": "https://gw-nepal.com/"
     }
   ],
   "mediaPortfolio": [
