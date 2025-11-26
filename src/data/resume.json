@@ -126,6 +126,11 @@
       "url": "https://mediascraper.saralcodes.xyz/"
     },
     {
+  "title": "Agronomic Metadata Standardization (LCAS Project)",
+  "description": "Developed standardized variable names, metadata schemas, and data dictionaries for multi-country agronomy datasets as part of the Long-term Comparative Agronomy Sites project. Ensured consistent definitions, naming conventions, and data interoperability across research teams and platforms.",
+  "url": "https://systems-agronomy.github.io/lcas/about/"
+  },
+    {
       "title": "Groundwater Monitoring Dashboard",
       "description": "Kobo Collect pipeline for GWRDB Nepal",
       "url": "https://gw-nepal.com/"
