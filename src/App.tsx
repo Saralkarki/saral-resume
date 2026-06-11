@@ -6,6 +6,7 @@ import Education from "./components/Education";
 import Projects from "./components/Projects";
 import Publications from "./components/Publications";
 import MediaPortfolio from "./components/MediaPortfolio";
+import resumeData from "./data/resume.json";
 
 function App() {
   return (
@@ -13,9 +14,19 @@ function App() {
       className="resume-root d-flex min-vh-100 flex-row flex-md-row flex-column"
       style={{ background: "#e0e0e0" }}
     >
-      {/* Sidebar/ProfileCard */}
+      {/* Print-Only Header (Hidden on Screen) */}
+      <div className="print-only-header d-none d-print-block w-100 text-center mb-4 pb-2 border-bottom border-dark">
+        <h1 className="fw-bold text-uppercase mb-1" style={{ fontSize: "24pt" }}>{resumeData.personalInfo.name}</h1>
+        <p className="mb-1" style={{ fontSize: "11pt", fontWeight: "bold" }}>{resumeData.personalInfo.location}</p>
+        <p style={{ fontSize: "11pt" }}>
+          <i className="bi bi-telephone-fill me-1"></i> {resumeData.personalInfo.phone} | 
+          <i className="bi bi-envelope-fill mx-1"></i> {resumeData.personalInfo.email}
+        </p>
+      </div>
+
+      {/* Sidebar/ProfileCard (Hidden on Print) */}
       <div
-        className="profile-col bg-white"
+        className="profile-col bg-white d-print-none"
         style={{
           flex: "0 0 320px",
           minHeight: "100vh",
@@ -27,6 +38,7 @@ function App() {
       >
         <ProfileCard />
       </div>
+
       {/* Main Content */}
       <main
         className="main-content flex-grow-1"
@@ -55,6 +67,12 @@ function App() {
         </div>
         <div className="mb-4">
           <MediaPortfolio />
+        </div>
+
+        {/* Print-Only Referees Section */}
+        <div className="print-only-referees d-none d-print-block mt-5 pt-3 border-top border-dark">
+          <h2 className="h5 fw-bold text-uppercase mb-2">Referees</h2>
+          <p>Excellent referees available upon request</p>
         </div>
       </main>
     </div>

@@ -1,38 +1,37 @@
 {
   "personalInfo": {
     "name": "Saral Karki",
-    "title": "Data Specialist",
-    "location": "Anandanagar Marga, Dhumbarahi, Kathmandu",
-    "phone": "+977-9860041091",
+    "title": "Data Analyst & Scientist",
+    "location": "Unit 4/123 Victoria Road, Punchbowl, NSW 2196",
+    "phone": "0493 117 830",
     "email": "saral.karki@gmail.com",
     "portfolio": "https://medium.com/@Saral.karki",
     "website": "saralkarki.github.io/saral-resume/"
   },
-  "professionalSummary": "Data Specialist with 5+ years of experience building data systems, pipelines, dashboards, and automation workflows across research and analytics. Skilled in Python, SQL, cloud deployment, dbt, statistical modeling, and LLM‑powered automation. Recently expanded into sports analytics with daily data‑driven cricket articles and visual insights at <a href='https://cricketgardens.com' target='_blank' rel='noopener noreferrer'>Cricket Gardens</a>.",
+  "professionalSummary": "Versatile Data Analyst & Scientist with 5+ years of experience in designing and engineering end-to-end data systems. Proven track record in automating data pipelines, developing high-impact dashboards, and leveraging cloud infrastructure to drive actionable business insights. Highly adaptable with a strong focus on technical scalability, efficiency, and solving complex data challenges.",
   "experience": [
     {
-      "title": "Data Specialist",
+      "title": "Data Analyst / Data Scientist",
       "company": "International Maize and Wheat Improvement Centre (CIMMYT)",
-      "location": "Khumaltar, Nepal",
-      "period": "January 2020 – August 2025",
+      "location": "NSW, Australia (Remote/Hybrid)",
+      "period": "January 2020 – Present",
       "responsibilities": [
-        "Designed and implemented automated pipelines to collect field data using KoboToolbox and push cleaned data to interactive dashboards (Dash, Power BI, Looker Studio, Tableau)",
-        "Developed standardized data management protocols to improve accuracy, reproducibility, and efficiency",
-        "Built data transformation workflows using SQL and dbt",
-        "Used Linux and Bash scripting to automate ingestion and reporting",
-        "Leveraged Git and GitHub Actions for version control and automation",
-        "Integrated Hugging Face and OpenAI APIs for NLP-related analysis",
-        "Leading a wheat disease monitoring pipeline for yellow rust tracking"
+        "Architected and scaled automated data pipelines, streamlining field-data collection and significantly reducing manual processing time while increasing data accuracy for key stakeholders.",
+        "Developed and maintained standardized data management protocols, improving reproducibility, efficiency, and data governance.",
+        "Built scalable data transformation workflows using SQL and dbt to support complex analytical requirements.",
+        "Leveraged Linux, Bash scripting, and Docker to automate system ingestion and reporting, improving infrastructure reliability.",
+        "Integrated advanced NLP capabilities (Hugging Face, OpenAI APIs) to derive actionable insights from unstructured research data.",
+        "Led technical development for a wheat disease monitoring pipeline, improving tracking and reporting of field-outbreak data."
       ]
     },
     {
       "title": "Data Manager",
       "company": "International Institute of Independent Researchers",
-      "location": "Anamnagar",
+      "location": "Kathmandu, Nepal",
       "period": "June 2018 – December 2019",
       "responsibilities": [
-        "Managed data operations for research projects using Python, R, and ODK",
-        "Built custom scripts and dashboards for monitoring and evaluation"
+        "Developed and maintained robust data management frameworks for multi-disciplinary research projects, ensuring high-quality reporting for internal and external stakeholders.",
+        "Built custom scripts and interactive dashboards to monitor project performance, translating raw data into actionable insights for evaluation teams."
       ]
     }
   ],
@@ -49,51 +48,19 @@
     }
   ],
   "technicalSkills": [
-  {
-    "category": "Programming Languages",
-    "skills": ["Python", "R"]
-  },
-  {
-    "category": "Scripting & Markup Languages",
-    "skills": ["Bash", "HTML", "CSS"]
-  },
-  {
-    "category": "Frameworks & Web Development libraries",
-    "skills": ["Flask", "Dash","Django","React"]
-  },
-  {
-    "category": "Data Engineering & Databases",
-    "skills": ["SQL (PostgreSQL)", "dbt", "Cron jobs"]
-  },
-  {
-    "category": "Data Analysis & Libraries",
-    "skills": ["pandas", "numpy", "matplotlib", "seaborn", "scrapy"]
-  },
-  {
-    "category": "Data Collection Tools",
-    "skills": ["ODK", "KoboToolbox"]
-  },
-  {
-    "category": "Data Visualization & BI Tools",
-    "skills": ["Power BI", "Looker Studio"]
-  },
-  {
-    "category": "Version Control & CI/CD",
-    "skills": ["Git", "GitHub Actions"]
-  },
-  {
-    "category": "Containerization & Deployment",
-    "skills": ["Docker", "VPS deployments"]
-  },
-  {
-    "category": "Operating Systems",
-    "skills": ["Linux", "macOS", "Windows"]
-  },
-  {
-    "category": "LLMs & Generative AI",
-    "skills": ["OpenAI", "Hugging Face", "Prompt Engineering"]
-  }
-],
+    {
+      "category": "Data Engineering",
+      "skills": ["Python", "SQL (PostgreSQL)", "dbt", "Bash", "Docker"]
+    },
+    {
+      "category": "Data Science & Analytics",
+      "skills": ["Statistical Modeling", "NLP (OpenAI/Hugging Face APIs)", "Data Visualization (Dash, Power BI, Looker Studio)"]
+    },
+    {
+      "category": "DevOps & Infrastructure",
+      "skills": ["Git", "GitHub Actions", "VPS deployment", "Automation protocols"]
+    }
+  ],
   "certifications": [
     {
       "name": "Introduction to Data Science in Python",
@@ -116,24 +83,14 @@
   ],
   "projects": [
     {
-      "title": "Cricket Analytics ",
-      "description": "Analysis of cricket player performance using data scraping and visualization techniques",
-      "url": "https://cricketgardens.com"
-    },
-    {
       "title": "Wheat Disease Monitoring Pipeline",
-      "description": "Ongoing system using LLMs and custom data pipelines for rust outbreak tracking",
+      "description": "Ongoing system leveraging LLMs and custom data pipelines for real-time tracking of disease outbreaks.",
       "url": "https://mediascraper.saralcodes.xyz/"
     },
     {
-  "title": "Agronomic Metadata Standardization (LCAS Project)",
-  "description": "Developed standardized variable names, metadata schemas, and data dictionaries for multi-country agronomy datasets as part of the Long-term Comparative Agronomy Sites project. Ensured consistent definitions, naming conventions, and data interoperability across research teams and platforms.",
-  "url": "https://systems-agronomy.github.io/lcas/about/"
-  },
-    {
-      "title": "Groundwater Monitoring Dashboard",
-      "description": "Kobo Collect pipeline for GWRDB Nepal",
-      "url": "https://gw-nepal.com/"
+      "title": "Cricket Garden",
+      "description": "Data-driven analysis and visualization of cricket statistics.",
+      "url": "https://cricketgardens.com/"
     }
   ],
   "mediaPortfolio": [
@@ -146,16 +103,8 @@
       "url": "https://medium.com/@Saral.karki/earthquake-cluster-analysis-k-means-approach-cdb2bf6cb21b"
     },
     {
-      "title": "Nepal Earthquakes - Data Visualization",
+      "title": "Nepal Earthquakes Analysis",
       "url": "https://medium.com/@Saral.karki/nepal-earthquakes-magnitude-data-analysis-and-data-visualization-with-python-59988c0c807e"
-    },
-    {
-      "title": "GPS Ground Coverage Analysis",
-      "url": "https://medium.com/@Saral.karki/have-i-been-covering-enough-ground-6c7b990cfc8e"
-    },
-    {
-      "title": "Steps Distribution – Central Limit Theorem",
-      "url": "https://medium.com/@Saral.karki/visualizing-desired-steps-distribution-using-the-central-limit-theo"
     }
   ]
 }

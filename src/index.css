@@ -73,49 +73,39 @@ button:focus-visible {
   }
 }
 
-/* Australian Professional Resume Print Styles */
+/* Australian Professional Resume Print Styles - Matching the Markdown Template */
 @media print {
   @page {
-    margin: 12mm;
+    margin: 15mm;
     size: A4;
-    /* Hide browser headers and footers */
-    margin-top: 12mm;
-    margin-bottom: 12mm;
   }
   
-  /* Hide browser print headers/footers */
-  @page :first {
-    margin-top: 12mm;
-  }
-  
-  @page :left {
-    margin-left: 12mm;
-  }
-  
-  @page :right {
-    margin-right: 12mm;
-  }
-  
-  .print-hidden {
+  .print-hidden, .d-print-none {
     display: none !important;
+  }
+
+  /* Show print-only sections */
+  .d-print-block {
+    display: block !important;
   }
   
   body {
-    font-family: 'Arial', sans-serif !important;
-    font-size: 10pt !important;
-    line-height: 1.2 !important;
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 11pt !important;
+    line-height: 1.3 !important;
     color: #000 !important;
     background: white !important;
     margin: 0 !important;
     padding: 0 !important;
+    display: block !important;
   }
   
-  /* Completely restructure for print */
   .resume-root {
     display: block !important;
     background: white !important;
     margin: 0 !important;
     padding: 0 !important;
+    box-shadow: none !important;
   }
   
   .profile-col {
@@ -128,127 +118,118 @@ button:focus-visible {
     padding: 0 !important;
     margin: 0 !important;
     width: 100% !important;
+    box-shadow: none !important;
   }
-  
-  /* Create print header with personal info */
-  .main-content::before {
-    content: "SARAL KARKI\A Data Specialist\A \A Anandanagar Marga, Dhumbarahi, Kathmandu | +977-9860041091 | saral.karki@gmail.com\A saralkarki.github.io/saral-resume";
-    white-space: pre-line;
-    display: block;
-    text-align: center;
-    font-size: 13pt;
-    font-weight: bold;
-    line-height: 1.2;
-    margin-bottom: 12pt;
-    padding-bottom: 6pt;
-    border-bottom: 1.5pt solid #000;
+
+  /* Reset all background colors and shadows */
+  div, section, main, header, footer {
+    background: transparent !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
   }
-  
-  /* Tighter section spacing */
-  .main-content > div {
-    margin-bottom: 8pt !important;
-    page-break-inside: avoid !important;
-  }
-  
+
+  /* Section Spacing */
   .mb-4 {
-    margin-bottom: 0 !important;
+    margin-bottom: 12pt !important;
   }
-  
-  /* Clean section headers */
-  .main-content h1, .main-content h2 {
-    font-size: 11pt !important;
+
+  /* Section Headers */
+  h2 {
+    font-size: 14pt !important;
     font-weight: bold !important;
     text-transform: uppercase !important;
-    letter-spacing: 0.5pt !important;
-    margin: 8pt 0 4pt 0 !important;
-    padding-bottom: 1pt !important;
-    border-bottom: 0.5pt solid #666 !important;
+    border-bottom: 1.5pt solid #000 !important;
+    margin-top: 15pt !important;
+    margin-bottom: 8pt !important;
+    color: #000 !important;
     page-break-after: avoid !important;
   }
-  
-  /* Job titles */
-  .main-content h3 {
-    font-size: 10pt !important;
+
+  /* Remove icons from headers in print */
+  h2 i {
+    display: none !important;
+  }
+
+  /* Experience/Job Titles */
+  h3 {
+    font-size: 12pt !important;
     font-weight: bold !important;
-    margin: 6pt 0 2pt 0 !important;
+    margin-top: 8pt !important;
+    margin-bottom: 2pt !important;
     page-break-after: avoid !important;
   }
-  
-  /* Regular text - tighter */
-  .main-content p {
-    font-size: 9.5pt !important;
-    line-height: 1.15 !important;
-    margin: 2pt 0 !important;
+
+  /* Subtitles (Company, Location, Dates) */
+  .fw-medium, .text-muted, .small {
+    font-size: 11pt !important;
+    color: #000 !important;
+    font-weight: bold !important;
+    display: block !important;
+    margin-bottom: 2pt !important;
   }
-  
-  /* Bullet points - much tighter */
-  .main-content ul {
-    margin: 2pt 0 4pt 12pt !important;
-    padding: 0 !important;
+
+  /* Force details to be visible in print (since they might be toggled off) */
+  ul {
+    display: block !important;
+    margin-top: 4pt !important;
+    margin-bottom: 8pt !important;
+    padding-left: 20pt !important;
   }
-  
-  .main-content li {
-    font-size: 9.5pt !important;
-    line-height: 1.15 !important;
-    margin-bottom: 1pt !important;
+
+  li {
+    margin-bottom: 4pt !important;
     list-style-type: disc !important;
   }
-  
-  /* Company details */
-  .main-content .small {
-    font-size: 9pt !important;
-    color: #444 !important;
-    font-style: italic !important;
+
+  /* Buttons - Hide them in print */
+  button, .btn {
+    display: none !important;
   }
-  
-  /* Skills section - compact grid */
-  .main-content .fw-bold,
-  .main-content .fw-semibold {
-    font-weight: bold !important;
-    font-size: 9pt !important;
-    margin-bottom: 1pt !important;
-  }
-  
-  /* Make skills more compact */
-  .main-content .ms-2 {
-    font-size: 8.5pt !important;
-    line-height: 1.1 !important;
-    margin-bottom: 3pt !important;
-  }
-  
-  /* Links - clean */
+
+  /* Links - Clean */
   a {
     color: #000 !important;
     text-decoration: none !important;
   }
-  
-  a[href]:after {
-    content: "";
-  }
-  
-  /* Show URLs only for portfolio */
-  a[href*="medium.com"]:after,
-  a[href*="cricketgardens.com"]:after,
-  a[href*="saralcodes.xyz"]:after,
-  a[href*="gw-nepal.com"]:after {
-    content: " (" attr(href) ")";
-    font-size: 8pt;
-    color: #666;
-  }
-  
-  /* Remove Bootstrap margins/padding */
-  .card, .card-body {
-    margin: 0 !important;
-    padding: 0 !important;
+
+  /* Skills Section Layout */
+  .badge {
+    background: transparent !important;
+    color: #000 !important;
     border: none !important;
-    box-shadow: none !important;
+    padding: 0 !important;
+    font-size: 11pt !important;
+  }
+
+  .badge:not(:last-child):after {
+    content: ", ";
+  }
+
+  .skill-category {
+    margin-bottom: 8pt !important;
+  }
+
+  .skill-category h3 {
+    font-size: 11pt !important;
+    margin-top: 4pt !important;
+    color: #000 !important;
+  }
+
+  /* Publications/Projects */
+  .project-item, .publication-item {
+    page-break-inside: avoid !important;
+    margin-bottom: 10pt !important;
+  }
+
+  /* Remove unnecessary icons */
+  i.bi {
+    display: none !important;
   }
   
-  /* Compact headers */
-  .h4, .h5, .h6 {
-    margin: 0 !important;
-    padding: 0 !important;
-  }
+  /* Show only critical print icons if needed, but the PDF template doesn't have them */
 }
 
 @media (prefers-color-scheme: light) {

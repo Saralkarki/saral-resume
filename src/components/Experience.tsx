@@ -50,15 +50,16 @@ const Experience: React.FC = () => {
                 )}
               </button>
             </div>
-            {open && (
-              <ul id={`exp-details-${index}`} className="mb-0 ps-4">
-                {job.responsibilities.map((responsibility, idx) => (
-                  <li key={idx} className="text-dark mb-2">
-                    {responsibility}
-                  </li>
-                ))}
-              </ul>
-            )}
+            <ul
+              id={`exp-details-${index}`}
+              className={`mb-0 ps-4 ${open ? "d-block" : "d-none d-print-block"}`}
+            >
+              {job.responsibilities.map((responsibility, idx) => (
+                <li key={idx} className="text-dark mb-2">
+                  {responsibility}
+                </li>
+              ))}
+            </ul>
           </div>
         );
       })}
