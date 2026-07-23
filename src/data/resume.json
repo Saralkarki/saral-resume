@@ -16,12 +16,11 @@
       "location": "NSW, Australia (Remote/Hybrid)",
       "period": "January 2020 – Present",
       "responsibilities": [
-        "Architected and scaled automated data pipelines, streamlining field-data collection and significantly reducing manual processing time while increasing data accuracy for key stakeholders.",
-        "Developed and maintained standardized data management protocols, improving reproducibility, efficiency, and data governance.",
-        "Built scalable data transformation workflows using SQL and dbt to support complex analytical requirements.",
-        "Leveraged Linux, Bash scripting, and Docker to automate system ingestion and reporting, improving infrastructure reliability.",
-        "Integrated advanced NLP capabilities (Hugging Face, OpenAI APIs) to derive actionable insights from unstructured research data.",
-        "Led technical development for a wheat disease monitoring pipeline, improving tracking and reporting of field-outbreak data."
+        "Built automated wheat disease surveillance pipeline (Google CSE API → newspaper3k extraction → GROQ LLM classification → SQL/Leaflet dashboards). Processed 2,744+ articles over 303 days; achieved 94% LLM classification success and ~10x noise reduction through iterative prompt engineering.",
+        "Standardised multi-country agronomy survey data: designed module structure and naming conventions across 200+ variables; retrospectively harmonised rice (2019–20) and wheat (2018–21) datasets. Published governance documentation used for ongoing CIMMYT form building.",
+        "Engineered data pipelines reducing manual processing by 70%+ via Python scheduling, SQL transformations, and dbt workflows. Deployed systems on VPS with Docker containerization and GitHub Actions CI/CD.",
+        "Designed and deployed dashboards (Power BI, Dash, Leaflet.js, Highcharts) translating complex agricultural datasets into actionable insights for researchers and government stakeholders across South Asia.",
+        "Led digital-first data collection pilots: evaluated tablet-based (KoBoToolbox), sensor-based, and hybrid approaches; selected and scaled cost-optimal solution for groundwater monitoring (gw-nepal.com)."
       ]
     },
     {
@@ -50,15 +49,19 @@
   "technicalSkills": [
     {
       "category": "Data Engineering",
-      "skills": ["Python", "SQL (PostgreSQL)", "dbt", "Bash", "Docker"]
+      "skills": ["Python", "SQL (PostgreSQL/SQLite)", "dbt", "Bash", "Docker", "APScheduler", "newspaper3k"]
     },
     {
       "category": "Data Science & Analytics",
-      "skills": ["Statistical Modeling", "NLP (OpenAI/Hugging Face APIs)", "Data Visualization (Dash, Power BI, Looker Studio)"]
+      "skills": ["LLM Integration (GROQ, OpenAI, Hugging Face)", "Statistical Modeling", "YOLO (Computer Vision)", "Data Visualization (Dash, Power BI, Leaflet.js, Highcharts)"]
+    },
+    {
+      "category": "Data Collection & Governance",
+      "skills": ["KoBoToolbox", "ODK/KoBO Collect", "XLSForm", "Data Standardisation Protocols", "QGIS/ArcGIS"]
     },
     {
       "category": "DevOps & Infrastructure",
-      "skills": ["Git", "GitHub Actions", "VPS deployment", "Automation protocols"]
+      "skills": ["Git", "GitHub Actions", "VPS deployment", "CI/CD automation", "Containerization"]
     }
   ],
   "certifications": [
@@ -84,12 +87,27 @@
   "projects": [
     {
       "title": "Wheat Disease Monitoring Pipeline",
-      "description": "Ongoing system leveraging LLMs and custom data pipelines for real-time tracking of disease outbreaks.",
+      "description": "Automated news surveillance system for South Asia (Google CSE → LLM classification → interactive dashboards). Processed 2,744 articles over 10 months; semantic filtering via GROQ LLM achieved 94% classification success, reducing noise by ~10x. Deployed on VPS with Docker + Python scheduling.",
       "url": "https://mediascraper.saralcodes.xyz/"
     },
     {
+      "title": "LCAS Data Standardisation & Governance",
+      "description": "Standardized naming conventions and module structure for multi-year, multi-country agronomy surveys (wheat & rice). Harmonized legacy datasets (2018–2021) and published definitive documentation enabling cross-survey interoperability. Still used in CIMMYT form building.",
+      "url": "https://systems-agronomy.github.io/lcas/modules/"
+    },
+    {
+      "title": "Groundwater Monitoring Dashboard",
+      "description": "Digital data collection system (KoBoToolbox/ODK) replacing paper-based field surveys in Nepal. Built Django/Python dashboards for real-time well location tracking and monthly trend analysis. Eliminated manual data-entry errors and improved transparency.",
+      "url": "https://gw-nepal.com"
+    },
+    {
+      "title": "Cricket Ball Tracking System",
+      "description": "Real-time sports video analysis: two-stage ML pipeline (camera-angle classifier + YOLO ball detection). Custom-trained YOLOv8 models on 374 labeled frames, achieving 100% validation accuracy and 10ms inference latency on Apple Silicon.",
+      "url": "https://github.com/saralkarki/cricket-ball-tracking"
+    },
+    {
       "title": "Cricket Garden",
-      "description": "Data-driven analysis and visualization of cricket statistics.",
+      "description": "Data-driven cricket statistics platform with interactive analysis and visualizations.",
       "url": "https://cricketgardens.com/"
     }
   ],
