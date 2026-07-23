@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import resumeData from "../data/resume.json";
 
 const Projects: React.FC = () => {
@@ -14,19 +15,12 @@ const Projects: React.FC = () => {
       {resumeData.projects.map((project, index) => (
         <div key={index} className="project-item mb-3 p-3 bg-light rounded">
           <h3 className="h6 fw-bold mb-2">
-            {project.url ? (
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-decoration-none text-primary"
-              >
-                {project.title}{" "}
-                <i className="bi bi-box-arrow-up-right ms-1"></i>
-              </a>
-            ) : (
-              <span className="text-dark">{project.title}</span>
-            )}
+            <Link
+              to={`/projects/${project.slug}`}
+              className="text-decoration-none text-primary"
+            >
+              {project.title}
+            </Link>
           </h3>
           <p className="text-dark mb-0 small">{project.description}</p>
         </div>

@@ -87,28 +87,114 @@
   "projects": [
     {
       "title": "Wheat Disease Monitoring Pipeline",
+      "slug": "wheat-disease-monitoring",
       "description": "Automated news surveillance system for South Asia (Google CSE → LLM classification → interactive dashboards). Processed 2,744 articles over 10 months; semantic filtering via GROQ LLM achieved 94% classification success, reducing noise by ~10x. Deployed on VPS with Docker + Python scheduling.",
-      "url": "https://mediascraper.saralcodes.xyz/"
+      "projectLink": "https://mediascraper.saralcodes.xyz/",
+      "details": {
+        "problem": "Manual daily scraping and classification of wheat disease news from South Asian sources, with manual entry of location and GPS data. Time-consuming, error-prone, and no systematic tracking of outbreaks.",
+        "approach": [
+          "Built automated pipeline triggered by Google Custom Search Engine API every 12 hours, searching niche wheat-disease keywords across select publishers",
+          "Extracted article content using newspaper3k library, filtering dead URLs and paywalled content upstream (zero cost)",
+          "Classified articles using GROQ LLM with wheat-disease-expert prompt engineering to extract: article type (advisory/monitoring/sighting/warning/others), country, district, disease, affected variety, and sighting date",
+          "Stored gold-standard classified data in SQLite with SQL geolookups to populate latitude/longitude from existing GPS datasets",
+          "Visualized results via Leaflet.js (regional maps) and Highcharts.js (temporal trends)"
+        ],
+        "outcomes": [
+          "Processed 2,744+ articles over 303 days; 1,364 extracted and sent to LLM for semantic filtering",
+          "Achieved 94% LLM classification success rate (only 221 of 1,364 failed processing); identified 36 true disease signals from 1,105 noise articles",
+          "~10x noise reduction through iterative search-layer tuning (removed research-paper spam and off-topic results)",
+          "10 months of unattended production operation surviving international relocation",
+          "Zero extraction-stage leakage: provably clean state machine (767 dead URLs = 767 unextracted)"
+        ],
+        "techStack": ["Docker", "Flask", "Python", "APScheduler", "Google CSE API", "SQLite", "newspaper3k", "GROQ API", "Leaflet.js", "Highcharts.js"]
+      }
     },
     {
       "title": "LCAS Data Standardisation & Governance",
+      "slug": "lcas-data-standardisation",
       "description": "Standardized naming conventions and module structure for multi-year, multi-country agronomy surveys (wheat & rice). Harmonized legacy datasets (2018–2021) and published definitive documentation enabling cross-survey interoperability. Still used in CIMMYT form building.",
-      "url": "https://systems-agronomy.github.io/lcas/modules/"
+      "projectLink": "https://systems-agronomy.github.io/lcas/modules/",
+      "details": {
+        "problem": "Multi-year agronomy survey data collected inconsistently across projects and years with varying variable naming conventions (e.g., rice_yield vs yield_rice). Prevented cross-survey comparison, cross-temporal analysis, and reuse of data collection tools. Each year involved rewriting forms from scratch, losing built-in validation logic.",
+        "approach": [
+          "Designed modular variable grouping structure with standardized naming conventions (200+ variables harmonized)",
+          "Ran homogenization protocol retrospectively across all legacy survey files (rice 2019–20, wheat 2018–21)",
+          "Established data governance documentation and published definitive module reference at systems-agronomy.github.io/lcas",
+          "Enabled reusable form templates and consistent data collection methodology going forward"
+        ],
+        "outcomes": [
+          "Harmonized rice dataset (2019–20) published on CIMMYT Dataverse with standardized variable naming",
+          "Harmonized wheat dataset (2018–21) published on CIMMYT Dataverse, enabling multi-year trend analysis",
+          "Data governance documentation still actively used by CIMMYT teams for new form building and survey design",
+          "Enabled cross-survey interoperability and elimination of manual data-cleaning time"
+        ],
+        "techStack": ["Data governance protocols", "XLSForm", "CIMMYT Dataverse", "Documentation & versioning"]
+      }
     },
     {
       "title": "Groundwater Monitoring Dashboard",
+      "slug": "groundwater-monitoring",
       "description": "Digital data collection system (KoBoToolbox/ODK) replacing paper-based field surveys in Nepal. Built Django/Python dashboards for real-time well location tracking and monthly trend analysis. Eliminated manual data-entry errors and improved transparency.",
-      "url": "https://gw-nepal.com"
+      "projectLink": "https://gw-nepal.com",
+      "details": {
+        "problem": "Manual paper-based groundwater data collection from wells in Nepal, followed by manual re-entry into Excel. Error-prone (missing units, transcription errors), non-traceable (paper records lost), and difficult to share insights with stakeholders in real-time.",
+        "approach": [
+          "Evaluated three collection approaches: tablet-based digital forms, semi-automated HOBOware sensors, fully automated cloud-connected sensors",
+          "Selected tablet-based KoBoToolbox/KoBo Collect as cost-optimal balance of data quality and operational feasibility",
+          "Digitized paper survey into XLSForm with in-form validation checks (flagged suspicious measurements during collection, not post-hoc)",
+          "Built Django/Python dashboard visualizing well locations (geographic), monthly groundwater trends, and measurement consistency",
+          "Trained local data collectors to use the Kobo Collect app, minimizing friction by keeping the field methodology unchanged"
+        ],
+        "outcomes": [
+          "Eliminated manual data re-entry errors and transcription mistakes; zero measurement validation failures in field",
+          "Increased transparency: field staff accountability tracked via app logs (confirms who collected data and when)",
+          "Successfully expanded from western Nepal (original scope) to eastern Nepal with trained data collectors",
+          "Honest challenges: stakeholder transition (original partner organization dissolved) required retraining on both collection and dashboard; server costs were an ongoing constraint"
+        ],
+        "techStack": ["KoBoToolbox", "KoBo Collect (Android)", "XLSForm", "Python/Django", "JavaScript visualization"]
+      }
     },
     {
       "title": "Cricket Ball Tracking System",
-      "description": "Real-time sports video analysis: two-stage ML pipeline (camera-angle classifier + YOLO ball detection). Custom-trained YOLOv8 models on 374 labeled frames, achieving 100% validation accuracy and 10ms inference latency on Apple Silicon.",
-      "url": "https://github.com/saralkarki/cricket-ball-tracking"
+      "slug": "cricket-ball-tracking",
+      "description": "Real-time sports video analysis: two-stage ML pipeline (camera-angle classifier + YOLO ball detection). Custom-trained YOLOv8 models on 374 labeled frames with 10ms inference latency on Apple Silicon. Built annotation tools, automated training, and video export pipeline.",
+      "projectLink": "https://github.com/saralkarki/cricket-ball-tracking",
+      "details": {
+        "problem": "Analyzing cricket broadcast video to track ball position frame-by-frame is computationally expensive and requires robust real-time detection. Ball detection alone isn't enough — camera angle (bowling vs non-bowling perspective) changes detection strategy.",
+        "approach": [
+          "Designed two-stage pipeline: (1) YOLOv8 classifier for camera-angle detection (bowling vs other), (2) YOLOv8 detector for ball localization",
+          "Built custom video annotation tool (mouse-based bounding-box drawing) for rapid dataset collection",
+          "Trained YOLOv8 nano models on 374 labeled cricket ball frames and 170 angle-classification frames",
+          "Implemented hand-crafted feature extraction baseline (histogram, edge density, brightness, texture) using Random Forest classifier for comparison",
+          "Integrated models into unified prediction pipeline with video export (overlay bounding boxes and confidence scores)"
+        ],
+        "outcomes": [
+          "Achieved ~10ms per-frame inference latency on Apple Silicon, enabling real-time 25fps processing",
+          "Created reproducible training pipeline with documented model trade-offs (YOLO vs Random Forest: accuracy vs speed vs stability)",
+          "Built clean CLI interface with mode switching (collect/predict) and model selection",
+          "Established documented roadmap for future enhancements (web UI, bounce detection, bird's eye view)"
+        ],
+        "techStack": ["YOLOv8", "OpenCV", "Python", "Random Forest baseline", "Custom annotation tooling", "Git workflow"]
+      }
     },
     {
       "title": "Cricket Garden",
+      "slug": "cricket-garden",
       "description": "Data-driven cricket statistics platform with interactive analysis and visualizations.",
-      "url": "https://cricketgardens.com/"
+      "projectLink": "https://cricketgardens.com/",
+      "details": {
+        "problem": "Cricket analysis often relies on surface-level stats or opinion. A unified platform for analytical cricket writing backed by curated data and interactive visualizations was missing.",
+        "approach": [
+          "Built database of cricket statistics (player, team, match records)",
+          "Developed interactive visualization platform for exploring trends and relationships",
+          "Published original analytical pieces on cricket topics using the platform's data"
+        ],
+        "outcomes": [
+          "Platform hosting analytical cricket writing and visualizations",
+          "Demonstrated ability to combine data, analysis, and storytelling for a niche audience"
+        ],
+        "techStack": ["Database design", "Data visualization", "Web platform", "Cricket analytics"]
+      }
     }
   ],
   "mediaPortfolio": [
