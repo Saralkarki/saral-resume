@@ -8,7 +8,7 @@
     "portfolio": "https://medium.com/@Saral.karki",
     "website": "saralkarki.github.io/saral-resume/"
   },
-  "professionalSummary": "Versatile Data Analyst & Scientist with 5+ years of experience in designing and engineering end-to-end data systems. Proven track record in automating data pipelines, developing high-impact dashboards, and leveraging cloud infrastructure to drive actionable business insights. Highly adaptable with a strong focus on technical scalability, efficiency, and solving complex data challenges.",
+  "professionalSummary": "Versatile Data Analyst & Scientist with 5+ years of experience in designing and engineering end-to-end data systems for agricultural research and international development. Expert in building production-grade data pipelines, leveraging LLMs for semantic intelligence (GROQ, OpenAI), and developing ML solutions (YOLO computer vision). Proven track record architecting systems that scale: automated surveillance pipelines processing 2,744+ articles, LLM-powered classification achieving 94% success, and data governance enabling cross-survey interoperability across multi-country datasets. Skilled in data standardisation, interactive dashboards (Power BI, Dash, Leaflet), digital data collection tool design (KoBoToolbox, XLSForm), and translating complex agricultural datasets into actionable insights for researchers and government stakeholders.",
   "experience": [
     {
       "title": "Data Analyst / Data Scientist",
