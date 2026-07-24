@@ -165,8 +165,8 @@ const ProjectDetail: React.FC = () => {
         </div>
       </div>
 
-      {/* Problem Section - constrained container with grey background */}
-      <section style={{ background: "#f5f5f5", padding: "3rem 48px" }}>
+      {/* Problem Section - full-width background with constrained content */}
+      <section style={{ background: "#f5f5f5", padding: "3rem 48px", width: "100%" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
           <h2 className="h5 fw-bold text-dark mb-3 position-relative">
             Problem
