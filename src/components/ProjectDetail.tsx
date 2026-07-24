@@ -165,32 +165,23 @@ const ProjectDetail: React.FC = () => {
         </div>
       </div>
 
-      {/* Problem Section with full-width two-column layout */}
-      <section style={{ display: "flex", minHeight: "100vh", width: "100%" }}>
-        {/* Left column - grey background with problem text */}
-        <div style={{ flex: "0 0 48%", background: "#f5f5f5", padding: "3rem 48px", display: "flex", flexDirection: "column", justifyContent: "center" }}>
-          <div style={{ maxWidth: "400px" }}>
-            <h2 className="h5 fw-bold text-dark mb-3 position-relative">
-              Problem
-              <div
-                className="position-absolute bottom-0 start-0 bg-primary"
-                style={{ height: "3px", width: "40px" }}
-              ></div>
-            </h2>
-            <p className="text-dark mb-0">{project.details.problem}</p>
-          </div>
-        </div>
+      {/* Problem Section - constrained container with grey background */}
+      <section style={{ background: "#f5f5f5", padding: "3rem 48px" }}>
+        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+          <h2 className="h5 fw-bold text-dark mb-3 position-relative">
+            Problem
+            <div
+              className="position-absolute bottom-0 start-0 bg-primary"
+              style={{ height: "3px", width: "40px" }}
+            ></div>
+          </h2>
+          <p className="text-dark mb-4">{project.details.problem}</p>
 
-        {/* Right column - white background with flowchart */}
-        <div style={{ flex: "0 0 52%", background: "white", padding: "3rem 48px", display: "flex", flexDirection: "column", justifyContent: "center", overflowX: "auto" }}>
-          {project.slug === "wheat-disease-monitoring" ? (
-            <>
-              <h3 className="h6 fw-bold text-dark mb-3" style={{ marginTop: 0 }}>Pipeline Architecture</h3>
+          {/* Show flowchart only for wheat disease project */}
+          {project.slug === "wheat-disease-monitoring" && (
+            <div style={{ overflowX: "auto" }}>
+              <h3 className="h6 fw-bold text-dark mb-3">Pipeline Architecture</h3>
               <WheatDiseaseFlowchart />
-            </>
-          ) : (
-            <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "100%", color: "#999" }}>
-              <p className="text-center mb-0" style={{ fontSize: "0.9rem" }}>Detailed visualization</p>
             </div>
           )}
         </div>
