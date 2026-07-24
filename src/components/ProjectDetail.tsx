@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import resumeData from "../data/resume.json";
+import ProfileCard from "./ProfileCard";
 
 interface Project {
   slug: string;
@@ -140,7 +141,32 @@ const ProjectDetail: React.FC = () => {
   );
 
   return (
-    <div className="d-print-none" style={{ minHeight: "100vh", width: "100%" }}>
+    <div className="resume-root d-flex min-vh-100 flex-row flex-md-row flex-column" style={{ background: "#e0e0e0" }}>
+      {/* Sidebar/ProfileCard */}
+      <div
+        className="profile-col bg-white d-print-none"
+        style={{
+          flex: "0 0 320px",
+          minHeight: "100vh",
+          position: "sticky",
+          top: 0,
+          zIndex: 10,
+          boxShadow: "2px 0 8px rgba(0,0,0,0.04)",
+        }}
+      >
+        <ProfileCard />
+      </div>
+
+      {/* Main Content */}
+      <main
+        className="main-content flex-grow-1"
+        style={{
+          background: "#f5f5f5",
+          minHeight: "100vh",
+          padding: "56px 48px 48px 48px",
+        }}
+      >
+      <div className="d-print-none" style={{ minHeight: "100vh", width: "100%" }}>
       {/* Header section - centered content */}
       <div style={{ background: "#f5f5f5", padding: "56px 48px" }}>
         <div style={{ maxWidth: "900px", margin: "0 auto" }}>
@@ -257,6 +283,8 @@ const ProjectDetail: React.FC = () => {
           </Link>
         </div>
       </div>
+      </div>
+      </main>
     </div>
   );
 };
