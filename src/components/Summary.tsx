@@ -11,10 +11,11 @@ const Summary: React.FC = () => {
           style={{ height: "3px", width: "60px" }}
         ></div>
       </h2>
-      <p
-        className="fs-6 text-dark lh-lg"
-        dangerouslySetInnerHTML={{ __html: resumeData.professionalSummary }}
-      />
+      {resumeData.professionalSummary.split("\n\n").map((paragraph, index) => (
+        <p key={index} className="fs-6 text-dark lh-lg">
+          {paragraph}
+        </p>
+      ))}
     </section>
   );
 };

@@ -16,6 +16,9 @@ const Publications: React.FC = () => {
           <h3 className="h6 fw-bold text-dark mb-2">{pub.title}</h3>
           <p className="text-primary fw-medium mb-1 small">{pub.journal}</p>
           <p className="text-muted mb-2 small">{pub.date}</p>
+          {"note" in pub && pub.note ? (
+            <p className="text-dark mb-2 small">{pub.note}</p>
+          ) : null}
           <a
             href={`https://doi.org/${pub.doi}`}
             target="_blank"

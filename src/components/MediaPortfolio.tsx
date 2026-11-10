@@ -5,7 +5,7 @@ const MediaPortfolio: React.FC = () => {
   return (
     <section className="media-portfolio mb-5">
       <h2 className="h5 fw-bold text-dark mb-3 position-relative">
-        Medium Articles
+        Selected Analytical Writing
         <div
           className="position-absolute bottom-0 start-0 bg-primary"
           style={{ height: "3px", width: "40px" }}

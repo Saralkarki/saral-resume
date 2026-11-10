@@ -6,6 +6,7 @@ import Education from "./components/Education";
 import Projects from "./components/Projects";
 import Publications from "./components/Publications";
 import MediaPortfolio from "./components/MediaPortfolio";
+import CoreCompetencies from "./components/CoreCompetencies";
 import resumeData from "./data/resume.json";
 
 function App() {
@@ -54,6 +55,9 @@ function App() {
           <Summary />
         </div>
         <div className="mb-4">
+          <CoreCompetencies />
+        </div>
+        <div className="mb-4">
           <Experience />
         </div>
         <div className="mb-4">
@@ -68,6 +72,16 @@ function App() {
         <div className="mb-4">
           <MediaPortfolio />
         </div>
+        <section className="mb-4">
+          <h2 className="h5 fw-bold text-dark mb-3 position-relative">
+            Technical Interests
+            <div
+              className="position-absolute bottom-0 start-0 bg-primary"
+              style={{ height: "3px", width: "40px" }}
+            ></div>
+          </h2>
+          <p className="text-dark mb-0">{resumeData.technicalInterests}</p>
+        </section>
 
         {/* Print-Only Referees Section */}
         <div className="print-only-referees d-none d-print-block mt-5 pt-3 border-top border-dark">

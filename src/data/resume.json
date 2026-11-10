@@ -1,26 +1,107 @@
 {
   "personalInfo": {
     "name": "Saral Karki",
-    "title": "Data Analyst & Scientist",
-    "location": "Punchbowl, NSW 2196",
+    "title": "Data Analyst | Applied Data Scientist | Data Engineering & AI Applications",
+    "location": "Sydney, NSW, Australia",
     "phone": "0493 117 830",
     "email": "saral.karki@gmail.com",
-    "portfolio": "https://medium.com/@Saral.karki",
-    "website": "saralkarki.github.io/saral-resume/"
+    "portfolio": "https://saralkarki.github.io/",
+    "website": "saralkarki.github.io",
+    "github": "https://github.com/Saralkarki"
   },
-  "professionalSummary": "Versatile Data Analyst & Scientist with 5+ years of experience in designing and engineering end-to-end data systems for agricultural research and international development. Expert in building production-grade data pipelines, leveraging LLMs for semantic intelligence (GROQ, OpenAI), and developing ML solutions (YOLO computer vision). Proven track record architecting systems that scale: automated surveillance pipelines processing 2,744+ articles with LLM-powered semantic filtering to separate signal from noise, data governance enabling cross-survey interoperability across multi-country datasets, and ML pipelines achieving real-time inference. Skilled in data standardisation, interactive dashboards (Power BI, Dash, Leaflet), digital data collection tool design (KoBoToolbox, XLSForm), and translating complex datasets into actionable insights for researchers and stakeholders.",
+  "professionalSummary": "Data Analyst and Applied Data Scientist with 8 years of experience across agricultural research, international development, data analytics, data engineering and application development.\n\nExperienced in designing end-to-end data systems, developing automated data pipelines, building LLM-powered information extraction applications, and applying statistical and machine learning techniques to practical problems.\n\nHands-on experience with Python, SQL, database design, ETL workflows, prompt engineering, API integration, computer vision, geospatial analysis and interactive data visualisation. Developed an automated agricultural news monitoring system integrating Google Custom Search API, Groq and Llama 3.1 8B Instant, processing 2,744 URLs and extracting 1,364 articles.\n\nExperienced in deploying applications on Linux servers using Docker and Coolify-based CI/CD, automating workflows and building reliable data processing systems. Strong background in research data management, data standardisation, digital data collection and translating complex datasets into useful analytical outputs.",
+  "coreCompetencies": [
+    {
+      "name": "Data Analytics",
+      "description": "Exploratory data analysis, statistical analysis, research data analysis and analytical reporting."
+    },
+    {
+      "name": "Data Science & Machine Learning",
+      "description": "Statistical modelling, Random Forest, YOLO, computer vision and predictive modelling."
+    },
+    {
+      "name": "Applied AI & LLM Applications",
+      "description": "LLM API integration, prompt engineering, structured information extraction and semantic classification."
+    },
+    {
+      "name": "Data Engineering",
+      "description": "ETL/ELT workflows, database design, data integration, transformation and automation."
+    },
+    {
+      "name": "Data Management & Governance",
+      "description": "Data quality, validation, standardisation, metadata, documentation and data dictionaries."
+    },
+    {
+      "name": "Application Development",
+      "description": "Python applications, REST APIs, dashboards and automated processing systems."
+    },
+    {
+      "name": "Geospatial Analysis",
+      "description": "GIS, coordinate validation, spatial matching and geographic visualisation."
+    },
+    {
+      "name": "Deployment & Infrastructure",
+      "description": "Linux, Docker, Coolify, CI/CD and workflow scheduling."
+    }
+  ],
+  "technicalInterests": "Applied AI and LLM applications, automated information extraction, data engineering, machine learning, computer vision, geospatial analytics, research data systems, sports analytics and data visualisation.",
   "experience": [
     {
       "title": "Data Analyst / Data Scientist",
-      "company": "International Maize and Wheat Improvement Centre (CIMMYT)",
-      "location": "NSW, Australia (Remote/Hybrid)",
-      "period": "January 2020 – Present",
+      "company": "International Maize and Wheat Improvement Center (CIMMYT)",
+      "location": "Sydney, NSW, Australia",
+      "period": "January 2020 – June 2026",
+      "description": "Worked across agricultural and environmental research data systems, supporting research teams through data engineering, analytics, statistical modelling, digital data collection and application development.",
       "responsibilities": [
-        "Built automated wheat disease surveillance pipeline (Google CSE API → newspaper3k extraction → GROQ LLM classification → SQL/Leaflet dashboards). Processed 2,744+ articles over 303 days; achieved 94% LLM classification success and ~10x noise reduction through iterative prompt engineering.",
-        "Standardised multi-country agronomy survey data: designed module structure and naming conventions across 200+ variables; retrospectively harmonised rice (2019–20) and wheat (2018–21) datasets. Published governance documentation used for ongoing CIMMYT form building.",
-        "Engineered data pipelines reducing manual processing by 70%+ via Python scheduling, SQL transformations, and dbt workflows. Deployed systems on VPS with Docker containerization and GitHub Actions CI/CD.",
-        "Designed and deployed dashboards (Power BI, Dash, Leaflet.js, Highcharts) translating complex agricultural datasets into actionable insights for researchers and government stakeholders across South Asia.",
-        "Led digital-first data collection pilots: evaluated tablet-based (KoBoToolbox), sensor-based, and hybrid approaches; selected and scaled cost-optimal solution for groundwater monitoring (gw-nepal.com)."
+        {
+          "category": "LLM Applications and Applied AI",
+          "items": [
+            "Developed an automated agricultural news monitoring and information extraction application using Python, Google Custom Search API and Groq API with Llama 3.1 8B Instant.",
+            "Designed and iteratively refined domain-specific prompts to classify agricultural news and extract structured information, including article type, country, district, disease, crop variety and reported date.",
+            "Integrated LLM-generated JSON outputs into Python processing workflows for further validation, geographic matching and structured storage.",
+            "Designed prompt and API request workflows to operate within free-tier requests-per-minute and tokens-per-minute limits.",
+            "Processed 2,744 URLs and extracted 1,364 articles during the documented application evaluation."
+          ]
+        },
+        {
+          "category": "Data Engineering and Research Data Management",
+          "items": [
+            "Designed database schemas and developed ETL workflows to consolidate data from multiple agricultural research and survey sources.",
+            "Developed Python and SQL workflows for data cleaning, transformation, validation, integration and standardisation.",
+            "Worked with PostgreSQL, SQLite and DuckDB for structured data storage and analytical workflows.",
+            "Developed reusable data transformation processes and dbt workflows.",
+            "Contributed to data dictionaries, metadata structures, validation frameworks and documentation standards.",
+            "Standardised agricultural survey structures and naming conventions across more than 200 variables, harmonising legacy rice and wheat datasets."
+          ]
+        },
+        {
+          "category": "Application Development and Deployment",
+          "items": [
+            "Developed Python-based applications and automated data processing systems to support research workflows.",
+            "Deployed applications on Linux-based servers using Docker and Coolify-based CI/CD workflows.",
+            "Automated recurring processes using APScheduler and cron.",
+            "Implemented application logging and maintained development workflows using Git and GitHub."
+          ]
+        },
+        {
+          "category": "Data Science and Analytics",
+          "items": [
+            "Applied probit regression and correlation analysis to investigate agricultural research questions.",
+            "Developed Random Forest classification workflows, including image-based cricket-ball classification.",
+            "Applied Jaccard similarity to compare survey response sets.",
+            "Developed interactive dashboards and visualisations using Power BI, Plotly, Dash, Leaflet.js and Highcharts.",
+            "Worked with agricultural and environmental datasets relating to soil health, water use, conservation agriculture, crop residue management, emissions and climate adaptation."
+          ]
+        },
+        {
+          "category": "Digital Data Collection",
+          "items": [
+            "Designed and supported digital survey workflows using KoBoToolbox, KoBo Collect, ODK and XLSForm.",
+            "Evaluated tablet-based, sensor-based and hybrid approaches for field data collection.",
+            "Developed digital forms with validation rules to improve data quality at the point of collection.",
+            "Supported the development of groundwater monitoring systems and digital research data collection processes."
+          ]
+        }
       ]
     },
     {
@@ -28,40 +109,157 @@
       "company": "International Institute of Independent Researchers",
       "location": "Kathmandu, Nepal",
       "period": "June 2018 – December 2019",
+      "description": "",
       "responsibilities": [
-        "Developed and maintained robust data management frameworks for multi-disciplinary research projects, ensuring high-quality reporting for internal and external stakeholders.",
-        "Built custom scripts and interactive dashboards to monitor project performance, translating raw data into actionable insights for evaluation teams."
+        {
+          "category": "",
+          "items": [
+            "Developed and maintained data management frameworks for multidisciplinary research projects.",
+            "Managed research datasets, including data collection, cleaning, validation, organisation and preparation for analysis.",
+            "Developed custom scripts to automate repetitive data processing and reporting tasks.",
+            "Built interactive dashboards to monitor project performance and support research evaluation.",
+            "Worked with research teams to improve data quality, consistency and accessibility.",
+            "Prepared structured datasets and analytical outputs for internal and external stakeholders."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "In-ground Data Analyst",
+      "company": "Ellipse Data Australia",
+      "location": "Australia",
+      "period": "August 2026 – Present",
+      "employmentType": "Casual / Seasonal",
+      "description": "",
+      "responsibilities": [
+        {
+          "category": "",
+          "items": [
+            "Collect and record cricket match data in a live sporting environment.",
+            "Maintain accuracy and consistency when recording match events and related information.",
+            "Follow established data collection procedures and operational requirements during matches."
+          ]
+        }
       ]
     }
   ],
   "education": [
     {
-      "degree": "Master's in International Studies",
+      "degree": "Master of International Studies",
       "institution": "University of Wollongong",
       "location": "Australia"
     },
     {
-      "degree": "Bachelor's in Development Studies",
+      "degree": "Bachelor of Development Studies",
       "institution": "National College, Kathmandu University",
       "location": "Nepal"
     }
   ],
   "technicalSkills": [
     {
+      "category": "Programming",
+      "skills": [
+        "Python",
+        "SQL",
+        "R",
+        "Bash"
+      ]
+    },
+    {
+      "category": "Python Libraries",
+      "skills": [
+        "pandas",
+        "NumPy",
+        "scikit-learn",
+        "OpenCV"
+      ]
+    },
+    {
+      "category": "Databases",
+      "skills": [
+        "PostgreSQL",
+        "SQLite",
+        "DuckDB"
+      ]
+    },
+    {
       "category": "Data Engineering",
-      "skills": ["Python", "SQL (PostgreSQL/SQLite)", "dbt", "Bash", "Docker", "APScheduler", "newspaper3k"]
+      "skills": [
+        "ETL/ELT",
+        "dbt",
+        "Data Modelling",
+        "Data Validation",
+        "API Integration"
+      ]
     },
     {
-      "category": "Data Science & Analytics",
-      "skills": ["LLM Integration (GROQ, OpenAI, Hugging Face)", "Statistical Modeling", "YOLO (Computer Vision)", "Data Visualization (Dash, Power BI, Leaflet.js, Highcharts)"]
+      "category": "Generative AI",
+      "skills": [
+        "Groq API",
+        "OpenAI API",
+        "Hugging Face",
+        "Prompt Engineering"
+      ]
     },
     {
-      "category": "Data Collection & Governance",
-      "skills": ["KoBoToolbox", "ODK/KoBO Collect", "XLSForm", "Data Standardisation Protocols", "QGIS/ArcGIS"]
+      "category": "Machine Learning",
+      "skills": [
+        "Random Forest",
+        "YOLOv8",
+        "YOLOv2",
+        "Probit Regression",
+        "Correlation Analysis",
+        "Jaccard Similarity"
+      ]
     },
     {
-      "category": "DevOps & Infrastructure",
-      "skills": ["Git", "GitHub Actions", "VPS deployment", "CI/CD automation", "Containerization"]
+      "category": "Visualisation",
+      "skills": [
+        "Power BI",
+        "Tableau",
+        "Plotly",
+        "Dash",
+        "Leaflet.js",
+        "Highcharts.js",
+        "Excel"
+      ]
+    },
+    {
+      "category": "Data Collection",
+      "skills": [
+        "KoBoToolbox",
+        "KoBo Collect",
+        "ODK",
+        "XLSForm"
+      ]
+    },
+    {
+      "category": "GIS",
+      "skills": [
+        "QGIS",
+        "ArcGIS",
+        "Geospatial Data Processing"
+      ]
+    },
+    {
+      "category": "Deployment",
+      "skills": [
+        "Linux",
+        "Docker",
+        "Coolify",
+        "CI/CD",
+        "Git",
+        "GitHub",
+        "GitHub Actions"
+      ]
+    },
+    {
+      "category": "Automation",
+      "skills": [
+        "APScheduler",
+        "cron",
+        "Python Scripting"
+      ]
     }
   ],
   "certifications": [
@@ -81,133 +279,329 @@
       "title": "The optimization of conservation agriculture practices requires attention to location-specific performance",
       "journal": "Field Crops Research, Volume 282",
       "date": "June 2022",
-      "doi": "10.1016/j.fcr.2022.108508"
+      "doi": "10.1016/j.fcr.2022.108508",
+      "note": "Contributed to data cleaning and preparation for this co-authored research publication."
     }
   ],
   "projects": [
     {
-      "title": "Wheat Disease Monitoring Pipeline",
+      "title": "Agricultural News Media Scraper & Wheat Disease Monitoring",
       "slug": "wheat-disease-monitoring",
-      "description": "Automated news surveillance system for South Asia (Google CSE → LLM classification → interactive dashboards). Processed 2,744 articles over 10 months; semantic filtering via GROQ LLM achieved 94% classification success, reducing noise by ~10x. Deployed on VPS with Docker + Python scheduling.",
+      "description": "Automated agricultural news monitoring system to discover, extract and classify wheat disease-related news across South Asia.",
       "projectLink": "https://mediascraper.saralcodes.xyz/",
+      "links": [
+        {
+          "label": "Live Application",
+          "url": "https://mediascraper.saralcodes.xyz/"
+        },
+        {
+          "label": "GitHub Repository",
+          "url": "https://github.com/Saralkarki/media_scraper"
+        },
+        {
+          "label": "Project Documentation",
+          "url": "https://saralkarki.github.io/media_scraper/"
+        }
+      ],
       "details": {
-        "problem": "Manual daily scraping and classification of wheat disease news from South Asian sources, with manual entry of location and GPS data. Time-consuming, error-prone, and no systematic tracking of outbreaks.",
+        "problem": "Discovering, extracting and classifying wheat disease-related news across South Asia required a repeatable system rather than manual monitoring.",
         "approach": [
-          "Built automated pipeline triggered by Google Custom Search Engine API every 12 hours, searching niche wheat-disease keywords across select publishers",
-          "Extracted article content using newspaper3k library, filtering dead URLs and paywalled content upstream (zero cost)",
-          "Classified articles using GROQ LLM with wheat-disease-expert prompt engineering to extract: article type (advisory/monitoring/sighting/warning/others), country, district, disease, affected variety, and sighting date",
-          "Stored gold-standard classified data in SQLite with SQL geolookups to populate latitude/longitude from existing GPS datasets",
-          "Visualized results via Leaflet.js (regional maps) and Highcharts.js (temporal trends)"
+          "Integrated Google Custom Search API for automated article discovery.",
+          "Implemented article extraction using newspaper3k.",
+          "Used Groq API and Llama 3.1 8B Instant for LLM-based classification and structured information extraction.",
+          "Engineered prompts to extract article categories, geographic information, disease names, affected varieties and dates.",
+          "Generated structured JSON outputs for downstream Python processing.",
+          "Implemented geographic matching using SQLite and legacy geographic reference records.",
+          "Developed geographic and temporal visualisations using Leaflet.js and Highcharts.js.",
+          "Automated recurring workflows using APScheduler and cron.",
+          "Deployed the application on a Linux server using Docker and Coolify-based CI/CD."
         ],
         "outcomes": [
-          "Processed 2,744+ articles over 303 days; 1,364 extracted and sent to LLM for semantic filtering",
-          "Achieved 94% LLM classification success rate (only 221 of 1,364 failed processing); identified 36 true disease signals from 1,105 noise articles",
-          "~10x noise reduction through iterative search-layer tuning (removed research-paper spam and off-topic results)",
-          "10 months of unattended production operation surviving international relocation",
-          "Zero extraction-stage leakage: provably clean state machine (767 dead URLs = 767 unextracted)"
+          "Documented scale: 2,744 URLs processed and 1,364 articles extracted."
         ],
-        "techStack": ["Docker", "Flask", "Python", "APScheduler", "Google CSE API", "SQLite", "newspaper3k", "GROQ API", "Leaflet.js", "Highcharts.js"]
+        "techStack": [
+          "Python",
+          "Groq API",
+          "Llama 3.1 8B Instant",
+          "Google Custom Search API",
+          "SQLite",
+          "Flask",
+          "Docker",
+          "Linux",
+          "Leaflet.js",
+          "Highcharts.js"
+        ]
       }
     },
     {
       "title": "LCAS Data Standardisation & Governance",
       "slug": "lcas-data-standardisation",
-      "description": "Standardized naming conventions and module structure for multi-year, multi-country agronomy surveys (wheat & rice). Harmonized legacy datasets (2018–2021) and published definitive documentation enabling cross-survey interoperability. Still used in CIMMYT form building.",
+      "description": "Standardised variable naming conventions and modular structures for multi-year, multi-country agricultural research surveys.",
       "projectLink": "https://systems-agronomy.github.io/lcas/modules/",
+      "links": [
+        {
+          "label": "LCAS Modules",
+          "url": "https://systems-agronomy.github.io/lcas/modules/"
+        }
+      ],
       "details": {
-        "problem": "Multi-year agronomy survey data collected inconsistently across projects and years with varying variable naming conventions (e.g., rice_yield vs yield_rice). Prevented cross-survey comparison, cross-temporal analysis, and reuse of data collection tools. Each year involved rewriting forms from scratch, losing built-in validation logic.",
+        "problem": "Multi-year, multi-country agricultural surveys needed consistent variable names and reusable module structures so datasets and forms could be compared and reused.",
         "approach": [
-          "Designed modular variable grouping structure with standardized naming conventions (200+ variables harmonized)",
-          "Ran homogenization protocol retrospectively across all legacy survey files (rice 2019–20, wheat 2018–21)",
-          "Established data governance documentation and published definitive module reference at systems-agronomy.github.io/lcas",
-          "Enabled reusable form templates and consistent data collection methodology going forward"
+          "Standardised more than 200 variables across agricultural survey modules.",
+          "Harmonised legacy rice datasets from 2019–2020 and wheat datasets from 2018–2021.",
+          "Developed reusable module structures and naming conventions.",
+          "Published documentation to support consistent survey design and form development."
         ],
         "outcomes": [
-          "Harmonized rice dataset (2019–20) published on CIMMYT Dataverse with standardized variable naming",
-          "Harmonized wheat dataset (2018–21) published on CIMMYT Dataverse, enabling multi-year trend analysis",
-          "Data governance documentation still actively used by CIMMYT teams for new form building and survey design",
-          "Enabled cross-survey interoperability and elimination of manual data-cleaning time"
+          "Improved cross-survey interoperability and the reuse of data collection structures."
         ],
-        "techStack": ["Data governance protocols", "XLSForm", "CIMMYT Dataverse", "Documentation & versioning"]
+        "techStack": [
+          "XLSForm",
+          "Data Governance",
+          "Data Dictionaries",
+          "CIMMYT Dataverse",
+          "Documentation"
+        ]
       }
     },
     {
       "title": "Groundwater Monitoring Dashboard",
       "slug": "groundwater-monitoring",
-      "description": "Digital data collection system (KoBoToolbox/ODK) replacing paper-based field surveys in Nepal. Built Django/Python dashboards for real-time well location tracking and monthly trend analysis. Eliminated manual data-entry errors and improved transparency.",
+      "description": "Digital groundwater monitoring system that replaced paper-based field data collection in Nepal.",
       "projectLink": "https://gw-nepal.com",
+      "links": [
+        {
+          "label": "Groundwater Monitoring Dashboard",
+          "url": "https://gw-nepal.com"
+        }
+      ],
       "details": {
-        "problem": "Manual paper-based groundwater data collection from wells in Nepal, followed by manual re-entry into Excel. Error-prone (missing units, transcription errors), non-traceable (paper records lost), and difficult to share insights with stakeholders in real-time.",
+        "problem": "Groundwater monitoring in Nepal relied on paper-based field collection, which made validation, sharing and trend analysis difficult.",
         "approach": [
-          "Evaluated three collection approaches: tablet-based digital forms, semi-automated HOBOware sensors, fully automated cloud-connected sensors",
-          "Selected tablet-based KoBoToolbox/KoBo Collect as cost-optimal balance of data quality and operational feasibility",
-          "Digitized paper survey into XLSForm with in-form validation checks (flagged suspicious measurements during collection, not post-hoc)",
-          "Built Django/Python dashboard visualizing well locations (geographic), monthly groundwater trends, and measurement consistency",
-          "Trained local data collectors to use the Kobo Collect app, minimizing friction by keeping the field methodology unchanged"
+          "Evaluated tablet-based, sensor-based and hybrid collection approaches.",
+          "Implemented digital field forms using KoBoToolbox and KoBo Collect.",
+          "Introduced validation rules to identify suspicious measurements during collection.",
+          "Developed a Django/Python dashboard to visualise groundwater well locations and monthly measurement trends.",
+          "Trained local field data collectors and supported expansion to additional regions."
         ],
         "outcomes": [
-          "Eliminated manual data re-entry errors and transcription mistakes; zero measurement validation failures in field",
-          "Increased transparency: field staff accountability tracked via app logs (confirms who collected data and when)",
-          "Successfully expanded from western Nepal (original scope) to eastern Nepal with trained data collectors",
-          "Honest challenges: stakeholder transition (original partner organization dissolved) required retraining on both collection and dashboard; server costs were an ongoing constraint"
+          "Replaced paper-based collection with a digital workflow and a dashboard for well locations and monthly measurement trends."
         ],
-        "techStack": ["KoBoToolbox", "KoBo Collect (Android)", "XLSForm", "Python/Django", "JavaScript visualization"]
+        "techStack": [
+          "Python",
+          "Django",
+          "KoBoToolbox",
+          "KoBo Collect",
+          "XLSForm",
+          "JavaScript",
+          "GIS"
+        ]
       }
     },
     {
       "title": "Cricket Ball Tracking System",
       "slug": "cricket-ball-tracking",
-      "description": "Real-time sports video analysis: two-stage ML pipeline (camera-angle classifier + YOLO ball detection). Custom-trained YOLOv8 models on 374 labeled frames with 10ms inference latency on Apple Silicon. Built annotation tools, automated training, and video export pipeline.",
+      "description": "Computer vision pipeline for detecting and tracking cricket balls in broadcast video.",
       "projectLink": "https://github.com/saralkarki/cricket-ball-tracking",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/saralkarki/cricket-ball-tracking"
+        }
+      ],
       "details": {
-        "problem": "Analyzing cricket broadcast video to track ball position frame-by-frame is computationally expensive and requires robust real-time detection. Ball detection alone isn't enough — camera angle (bowling vs non-bowling perspective) changes detection strategy.",
+        "problem": "Tracking a cricket ball in broadcast video required a pipeline that could handle changing camera angles and export detections from video.",
         "approach": [
-          "Designed two-stage pipeline: (1) YOLOv8 classifier for camera-angle detection (bowling vs other), (2) YOLOv8 detector for ball localization",
-          "Built custom video annotation tool (mouse-based bounding-box drawing) for rapid dataset collection",
-          "Trained YOLOv8 nano models on 374 labeled cricket ball frames and 170 angle-classification frames",
-          "Implemented hand-crafted feature extraction baseline (histogram, edge density, brightness, texture) using Random Forest classifier for comparison",
-          "Integrated models into unified prediction pipeline with video export (overlay bounding boxes and confidence scores)"
+          "Designed a two-stage workflow combining camera-angle classification and cricket-ball detection.",
+          "Built a custom video annotation tool for drawing bounding boxes.",
+          "Prepared 374 labelled cricket-ball frames and 170 camera-angle classification frames.",
+          "Trained YOLOv8 nano models for classification and detection.",
+          "Developed a Random Forest baseline using manually engineered image features.",
+          "Implemented video inference and export with bounding-box overlays."
         ],
         "outcomes": [
-          "Achieved ~10ms per-frame inference latency on Apple Silicon, enabling real-time 25fps processing",
-          "Created reproducible training pipeline with documented model trade-offs (YOLO vs Random Forest: accuracy vs speed vs stability)",
-          "Built clean CLI interface with mode switching (collect/predict) and model selection",
-          "Established documented roadmap for future enhancements (web UI, bounce detection, bird's eye view)"
+          "Achieved approximately 10 ms per-frame inference latency on Apple Silicon in the documented setup."
         ],
-        "techStack": ["YOLOv8", "OpenCV", "Python", "Random Forest baseline", "Custom annotation tooling", "Git workflow"]
+        "techStack": [
+          "Python",
+          "YOLOv8",
+          "YOLOv2",
+          "OpenCV",
+          "Random Forest",
+          "Scikit-learn"
+        ]
+      }
+    },
+    {
+      "title": "Nepal Cricket Index",
+      "slug": "nepal-cricket-index",
+      "description": "Cricket analytics platform focused on Nepal cricket using structured ball-by-ball data.",
+      "projectLink": "https://thenepalcricketindex.howzatanalytics.com/",
+      "links": [
+        {
+          "label": "Nepal Cricket Index",
+          "url": "https://thenepalcricketindex.howzatanalytics.com/"
+        }
+      ],
+      "details": {
+        "problem": "Nepal cricket analysis needed structured match-level and ball-level datasets rather than ad hoc extracts from ball-by-ball records.",
+        "approach": [
+          "Processed and transformed Cricsheet cricket data.",
+          "Developed data workflows using Python, SQL, dbt and DuckDB.",
+          "Structured match-level and ball-level datasets for analysis.",
+          "Built interactive dashboards and analytical outputs."
+        ],
+        "outcomes": [
+          "Published an interactive cricket analytics platform focused on Nepal cricket."
+        ],
+        "techStack": [
+          "Python",
+          "SQL",
+          "dbt",
+          "DuckDB",
+          "Cricsheet",
+          "Data Visualisation"
+        ]
+      }
+    },
+    {
+      "title": "Ground Truth Validation",
+      "slug": "ground-truth-validation",
+      "description": "Geospatial validation workflow for survey coordinate datasets.",
+      "projectLink": "https://github.com/Saralkarki/ground-truth-validation",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Saralkarki/ground-truth-validation"
+        }
+      ],
+      "details": {
+        "problem": "Survey coordinate datasets needed spatial checks so potential location inconsistencies could be identified before analysis.",
+        "approach": [
+          "Processed 3,031 survey points from Nepal and 644 from Mexico.",
+          "Applied spatial checks and coordinate comparisons to identify potential location inconsistencies.",
+          "Developed reusable geospatial validation processes to support research data quality assessment."
+        ],
+        "outcomes": [
+          "Built a reusable geospatial validation process for research coordinate datasets."
+        ],
+        "techStack": [
+          "Python",
+          "GIS",
+          "Geospatial Analysis"
+        ]
+      }
+    },
+    {
+      "title": "CO₂ Emissions Prediction",
+      "slug": "co2-emissions-prediction",
+      "description": "Machine learning project exploring emissions data through preparation, exploratory analysis and predictive modelling.",
+      "projectLink": "https://github.com/Saralkarki/co2_emission",
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/Saralkarki/co2_emission"
+        }
+      ],
+      "details": {
+        "problem": "Emissions datasets needed a structured path from preparation and exploratory analysis through to predictive modelling.",
+        "approach": [
+          "Prepared emissions data and carried out exploratory analysis.",
+          "Developed predictive models to explore relationships in the emissions dataset."
+        ],
+        "outcomes": [
+          "Published the analysis and modelling workflow on GitHub."
+        ],
+        "techStack": [
+          "Python",
+          "Machine Learning",
+          "Data Analysis"
+        ]
+      }
+    },
+    {
+      "title": "Agricultural Technology Adoption Analysis",
+      "slug": "agricultural-technology-adoption",
+      "description": "Probit regression analysis of factors associated with agricultural technology adoption.",
+      "projectLink": "",
+      "links": [],
+      "details": {
+        "problem": "Understanding agricultural technology adoption required a statistical model of how explanatory variables relate to adoption outcomes.",
+        "approach": [
+          "Prepared and analysed research datasets for agricultural technology adoption.",
+          "Applied probit regression to investigate factors associated with adoption outcomes."
+        ],
+        "outcomes": [
+          "Used probit regression to explore relationships between explanatory variables and adoption outcomes."
+        ],
+        "techStack": [
+          "Statistical Modelling",
+          "Probit Regression",
+          "Research Data Analysis"
+        ]
+      }
+    },
+    {
+      "title": "Survey Response Similarity Analysis",
+      "slug": "survey-response-similarity",
+      "description": "Used Jaccard similarity to compare survey response sets and quantify overlap between responses.",
+      "projectLink": "",
+      "links": [],
+      "details": {
+        "problem": "Comparing survey response sets required a simple, interpretable measure of overlap.",
+        "approach": [
+          "Applied Jaccard similarity to compare survey response sets.",
+          "Quantified overlap between responses."
+        ],
+        "outcomes": [
+          "Produced a comparable measure of overlap across survey response sets."
+        ],
+        "techStack": [
+          "Python",
+          "Jaccard Similarity"
+        ]
       }
     },
     {
       "title": "Cricket Garden",
       "slug": "cricket-garden",
-      "description": "Data-driven cricket statistics platform with interactive analysis and visualizations.",
+      "description": "Data-driven cricket statistics and analytical writing platform combining curated data, visualisations and storytelling.",
       "projectLink": "https://cricketgardens.com/",
+      "links": [
+        {
+          "label": "Cricket Garden",
+          "url": "https://cricketgardens.com/"
+        }
+      ],
       "details": {
-        "problem": "Cricket analysis often relies on surface-level stats or opinion. A unified platform for analytical cricket writing backed by curated data and interactive visualizations was missing.",
+        "problem": "Cricket statistics were more useful when curated data, interactive visualisations and analytical writing lived in one place.",
         "approach": [
-          "Built database of cricket statistics (player, team, match records)",
-          "Developed interactive visualization platform for exploring trends and relationships",
-          "Published original analytical pieces on cricket topics using the platform's data"
+          "Designed a data model for curated cricket statistics.",
+          "Combined interactive visualisations with data-led analytical writing."
         ],
         "outcomes": [
-          "Platform hosting analytical cricket writing and visualizations",
-          "Demonstrated ability to combine data, analysis, and storytelling for a niche audience"
+          "Published Cricket Garden as a data-driven cricket statistics and writing platform."
         ],
-        "techStack": ["Database design", "Data visualization", "Web platform", "Cricket analytics"]
+        "techStack": [
+          "Cricket Analytics",
+          "Database Design",
+          "Data Visualisation",
+          "Web Development"
+        ]
       }
     }
   ],
   "mediaPortfolio": [
     {
-      "title": "Sandeep Lamichhane T20 Stats",
-      "url": "https://medium.com/@Saral.karki/comparing-sandeep-lamichhanes-twenty-20-stats-with-other-prominent-leggies-e028d80a570c"
+      "title": "Comparing Sandeep Lamichhane's T20 Stats with Other Prominent Leggies",
+      "url": "https://medium.com/@Saral.karki/comparing-sandeep-lamichhanes-twenty-twenty-stats-with-other-prominent-leggies-e028d80a570c"
     },
     {
-      "title": "Earthquake Cluster Analysis",
+      "title": "Earthquake Cluster Analysis: K-Means Approach",
       "url": "https://medium.com/@Saral.karki/earthquake-cluster-analysis-k-means-approach-cdb2bf6cb21b"
     },
     {
-      "title": "Nepal Earthquakes Analysis",
+      "title": "Nepal Earthquakes: Magnitude Data Analysis and Visualisation with Python",
       "url": "https://medium.com/@Saral.karki/nepal-earthquakes-magnitude-data-analysis-and-data-visualization-with-python-59988c0c807e"
     }
   ]

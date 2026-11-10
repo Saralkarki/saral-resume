@@ -45,7 +45,13 @@ export default function ProfileCard() {
         </h2>
         <p
           className="mb-3"
-          style={{ color: "#555", textAlign: "center", fontWeight: 500 }}
+          style={{
+            color: "#555",
+            textAlign: "center",
+            fontWeight: 500,
+            fontSize: 14,
+            lineHeight: 1.45,
+          }}
         >
           {resumeData.personalInfo.title}
         </p>
@@ -89,13 +95,25 @@ export default function ProfileCard() {
           <div className="d-flex align-items-center mb-2">
             <i className="bi bi-globe me-2" style={{ fontSize: 18 }}></i>
             <a
-              href={`http://${resumeData.personalInfo.website}`}
+              href={resumeData.personalInfo.portfolio}
               target="_blank"
               rel="noopener noreferrer"
               className="small text-decoration-none"
               style={{ color: "#222" }}
             >
               {resumeData.personalInfo.website}
+            </a>
+          </div>
+          <div className="d-flex align-items-center mb-2">
+            <i className="bi bi-github me-2" style={{ fontSize: 18 }}></i>
+            <a
+              href={resumeData.personalInfo.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="small text-decoration-none"
+              style={{ color: "#222" }}
+            >
+              github.com/Saralkarki
             </a>
           </div>
         </div>
@@ -132,6 +150,28 @@ export default function ProfileCard() {
                     {i < category.skills.length - 1 ? ", " : ""}
                   </span>
                 ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="mb-2 w-100" style={{ textAlign: "left" }}>
+          <h3
+            className="h6 fw-bold mb-3"
+            style={{ color: "#222", letterSpacing: 0.5 }}
+          >
+            <i
+              className="bi bi-patch-check me-2"
+              style={{ fontSize: 16, verticalAlign: "middle" }}
+            ></i>
+            Certifications
+          </h3>
+          {resumeData.certifications.map((cert, index) => (
+            <div key={index} className="mb-2">
+              <div className="fw-semibold small" style={{ color: "#222" }}>
+                {cert.name}
+              </div>
+              <div className="small" style={{ color: "#555" }}>
+                {cert.issuer} · {cert.date}
               </div>
             </div>
           ))}

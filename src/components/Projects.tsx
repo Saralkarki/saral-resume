@@ -22,7 +22,10 @@ const Projects: React.FC = () => {
               {project.title}
             </Link>
           </h3>
-          <p className="text-dark mb-0 small">{project.description}</p>
+          <p className="text-dark mb-2 small">{project.description}</p>
+          <p className="text-muted mb-0 small">
+            {project.details.techStack.join(" · ")}
+          </p>
         </div>
       ))}
     </section>

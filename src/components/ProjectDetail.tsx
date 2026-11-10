@@ -7,6 +7,7 @@ interface Project {
   slug: string;
   title: string;
   projectLink: string;
+  links?: { label: string; url: string }[];
   details: {
     problem: string;
     approach: string[];
@@ -99,10 +100,10 @@ const ProjectDetail: React.FC = () => {
         Extract: type (advisory/sighting/warning), country, district, disease
       </text>
       <text x="300" y="403" textAnchor="middle" fontSize="11" fill="#666">
-        Semantic filtering: 1,364 articles → 36 relevant signals
+        Documented scale: 2,744 URLs and 1,364 extracted articles
       </text>
       <text x="300" y="420" textAnchor="middle" fontSize="10" fill="#999">
-        Guard rails against hallucinations
+        Structured JSON for downstream processing
       </text>
 
       {/* Arrow */}
@@ -180,14 +181,24 @@ const ProjectDetail: React.FC = () => {
 
           {/* Title and Project Link */}
           <h1 className="h3 fw-bold text-dark mb-2">{project.title}</h1>
-          <a
-            href={project.projectLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-primary text-decoration-none small mb-4 d-inline-block"
-          >
-            Project Link <i className="bi bi-box-arrow-up-right ms-1"></i>
-          </a>
+          <div className="d-flex flex-wrap gap-3 mb-4">
+            {(project.links?.length
+              ? project.links
+              : project.projectLink
+                ? [{ label: "Project Link", url: project.projectLink }]
+                : []
+            ).map((link) => (
+              <a
+                key={link.url}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-primary text-decoration-none small"
+              >
+                {link.label} <i className="bi bi-box-arrow-up-right ms-1"></i>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
 
